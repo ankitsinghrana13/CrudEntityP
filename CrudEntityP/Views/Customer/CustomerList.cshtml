@@ -1,0 +1,19 @@
+﻿@model IEnumerable<CrudEntityP.Models.Customer>
+@{
+}
+
+<table class="table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+    </tr>
+    @foreach (var Cust in Model)
+    {
+        <tr>
+           <td>@Cust.Name</td>
+            <td>@Cust.Email</td>
+            <td>@Cust.Mobile</td>
+        </tr>
+    }
+    </table>
